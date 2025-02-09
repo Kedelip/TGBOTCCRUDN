@@ -1,30 +1,29 @@
-﻿aiofiles==24.1.0
-aiogram==3.17.0
-aiohappyeyeballs==2.4.4
-aiohttp==3.11.11
-aiosignal==1.3.2
-annotated-types==0.7.0
-anyio==4.8.0
-APScheduler==3.11.0
-attrs==25.1.0
-certifi==2025.1.31
-DateTime==5.5
-frozenlist==1.5.0
-h11==0.14.0
-httpcore==1.0.7
-httpx==0.28.1
-idna==3.10
-magic-filter==1.0.12
-multidict==6.1.0
-propcache==0.2.1
-pydantic==2.10.6
-pydantic_core==2.27.2
-python-telegram-bot==21.10
-pytz==2025.1
-setuptools==75.8.0
-sniffio==1.3.1
-typing_extensions==4.12.2
-tzdata==2025.1
-tzlocal==5.2
-yarl==1.18.3
-zope.interface==7.2
+# Core Dependencies
+python-telegram-bot==21.10  # Required for Telegram bot functionality
+pytz==2025.1  # For timezone handling
+APScheduler==3.11.0  # If you schedule tasks (optional)
+
+# HTTP and Networking
+aiohttp==3.11.11  # Required for asynchronous HTTP requests
+httpx==0.28.1  # Alternative HTTP client
+
+# Async Handling
+aiofiles==24.1.0  # If handling async file operations
+aiosignal==1.3.2  # Signal handling for async functions
+
+# Utility and Extensions
+attrs==25.1.0  # Used for object validation
+certifi==2025.1.31  # SSL certificates for secure connections
+frozenlist==1.5.0  # Needed for async handling in aiohttp
+idna==3.10  # Internationalized domain name support
+multidict==6.1.0  # Needed for aiohttp
+yarl==1.18.3  # For URL parsing
+
+# Data Handling
+pydantic==2.10.6  # For data validation
+pydantic_core==2.27.2  # Core functions for Pydantic
+typing_extensions==4.12.2  # Needed for backward compatibility
+
+# Scheduler (If needed)
+tzdata==2025.1  # Timezone data for handling datetime
+tzlocal==5.2  # Local timezone handling
